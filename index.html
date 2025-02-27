@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ағабек Жомарт</h1>
+            <p>10 сынып | РФМШ | Алматы</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">Мен</a></li>
+                    <li><a href="#achievements">Жетістік</a></li>
+                    <li><a href="#future">Болашақ</a></li>
+                    <li><a href="#legacy">Мұра</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container about-container">
+            <img src="C:\Users\Тест\Downloads\vs5.jpg" alt="Your Image" class="profile-img circle">
+            <div class="text-content">
+                <h2>Автобиография</h2>
+                <p>Салем, менің атым <strong>Жомарт</strong>. Мен 2008 жылы 5 маусымда Алматы қаласында дүниеге келдім. 2015 жылы алғаш рет мектепте оқи бастадым және қазір РФММ-нің 10-сынып оқушысымын. Бала кезімнен-ақ математика және логика пәндеріне көп қызыққанмын. </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2>Жетістіктер</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>🏆 IGO</h3>
+                    <p>Халықаралық геометрия олимпиадасында 2 орын алғанмын</p>
+                </div>
+                <div class="card">
+                    <h3>🚀 Клуб</h3>
+                    <p>Мектепте клуб ашқанмын</p>
+                </div>
+                <div class="card">
+                    <h3>🎓 Астрономия</h3>
+                    <p>"Астрофотография года" байқауында 1 орын женгенмін</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="future" class="section">
+        <div class="container about-container">
+            <img src="C:\Users\Тест\Downloads\vs1.jpg" alt="Future Icon" class="profile-img square">
+            <div class="text-content">
+                <h2>Болашақ мамандық</h2>
+                <p>Мен өскен кезде математика және физика саласында дамуды қалаймын. Сол үшін өзімді <strong>Аэроспейс ғалымы</strong> ретінде көремін.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="legacy" class="section">
+        <div class="container about-container">
+            <img src="C:\Users\Тест\Downloads\vs4.jpg" alt="History Icon" class="profile-img square">
+            <div class="text-content">
+                <h2>Қалдыратын мұра</h2>
+                <p>Мен технологияны жақсы жаққа өзгерткен адам ретінде есте қалғым келеді. Сол үшін космосты зерттеп жаңа ғылыми ашуларды істегім келеді.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Жомарт. Информатика сабағы.</p>
+    </footer>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            color: #333;
+            font-size: 28px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+        header {
+            background: #f8f8f8;
+            padding: 80px 20px;
+            border-bottom: 4px solid #008000;
+            text-align: center;
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+        .profile-img {
+            width: 350px;
+            height: 350px;
+            border: 5px solid #008000;
+            margin-right: 60px;
+        }
+        .circle {
+            border-radius: 50%;
+        }
+        .square {
+            border-radius: 12px;
+        }
+        .text-content {
+            flex: 1;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            font-size: 24px;
+        }
+        nav ul li a:hover {
+            color: #008000;
+        }
+        .section {
+            padding: 100px 20px;
+            background: #f8f8f8;
+            margin: 50px auto;
+            border-radius: 12px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+            border-left: 6px solid #008000;
+        }
+        .card:hover {
+            transform: scale(1.06);
+        }
+        footer {
+            padding: 30px;
+            background: #f8f8f8;
+            margin-top: 50px;
+            border-top: 4px solid #008000;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
